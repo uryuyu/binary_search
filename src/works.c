@@ -35,7 +35,7 @@ int main(){
             y += A[i];
             i ++;
         }
-            x ++;
+            if(y > m){x ++;}
         }
         if(x<k)
         {

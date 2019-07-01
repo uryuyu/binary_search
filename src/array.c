@@ -12,7 +12,7 @@ int main(){
     scanf("%d", &A[i]);
   }
     lb = 0;
-    ub = n;
+    ub = n-2;
     while (ub - lb > 1) {
         if(A[(lb + ub)/2] > k){
             ub = (lb + ub)/2;
@@ -21,7 +21,7 @@ int main(){
             lb = (lb + ub)/2;
         }
     }
-    printf("%d\n",ub);
+    printf("%d\n",lb+1);
 
   return 0;
 }

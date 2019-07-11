@@ -11,10 +11,10 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-    lb = 0;
-    ub = n-1;
+    lb = -1;
+    ub = n;
     while (ub - lb > 1) {
-        if(A[(lb + ub)/2] > k){
+        if(A[(lb + ub)/2] >= k){
             ub = (lb + ub)/2;
         }
         else{
